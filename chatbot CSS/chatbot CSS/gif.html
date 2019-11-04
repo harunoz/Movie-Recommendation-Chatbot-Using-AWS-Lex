@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Movie Mania</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+
+.container {
+  background:url(lightbulb.gif),url(movie-theatre.gif);
+  background-repeat: no-repeat,no-repeat;
+  background-position: center,center;
+  background-size:auto,cover;
+  padding: 200px;
+  z-index: 1;
+}
+
+h1{
+  text-align: center;
+  color: maroon;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 1;
+}
+
+p{
+  text-align: center;
+  font-size:17px;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  100% {color:maroon;}
+  25% {color: orangered;}
+  50% {color: yellow;}s
+  10% {color: purple;}
+  10% {color: yellow;}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to Movie Mania</h1>
+  
+</div>
+
+<p>Where you find your movie choice</p>
+</body>
+</html>

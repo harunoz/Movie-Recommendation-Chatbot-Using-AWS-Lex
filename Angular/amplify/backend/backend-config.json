@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"mybot808784d2": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

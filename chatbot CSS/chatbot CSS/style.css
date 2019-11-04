@@ -1,0 +1,38 @@
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+
+.container {
+  background:url(lightbulb.gif),url(movie-theatre.gif);
+  background-repeat: no-repeat,no-repeat;
+  background-position:center,center;
+  background-size:auto,cover;
+  padding: 200px;
+  z-index: 1;
+}
+
+h1{
+  text-align: center;
+  color: maroon;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 1;
+}
+
+p{
+  text-align: center;
+  font-size:17px;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  100% {color:maroon;}
+  25% {color: orangered;}
+  50% {color: yellow;}
+  10% {color: purple;}
+  10% {color: yellow;}
+}
