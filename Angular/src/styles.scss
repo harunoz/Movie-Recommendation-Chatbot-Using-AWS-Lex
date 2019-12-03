@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.amplify-authenticator {
+    width: 400px;
+    padding: 1em;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+  .amplify-form-input {
+    width: 60%;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 20px;
+  }
+  
+  .amplify-form-body {
+    
+    padding: 20px;;
+    
+  }
+  
+  .amplify-footer {
+    clear: both;
+  }
+  
+  .amplify-form-message-error {
+    margin: 0.5em 0 0.5em 2em;
+    clear: both;
+    color: red;
+  }
+  
+  /** Storage Components **/
+  
+  
+  .amplify-interactions-input{
+    font-size: 20px;
+    color: maroon;
+    text-align: justify;
+    font-family: "Lucida Console";
+  }
+  
+  .amplify-interactions-response{
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Lucida Console";
+  }
+  
