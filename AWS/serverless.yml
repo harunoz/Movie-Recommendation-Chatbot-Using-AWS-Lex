@@ -20,7 +20,25 @@ functions:
     handler: handler.getMoviesByYear
   getSimilarMovies:
     handler: handler.getSimilarMovies
+  getActor:
+    handler: handler.getActor
+  getDirector:
+    handler: handler.getDirector
+  getKidsMovies:
+    handler: handler.getKidsMovies
+  getEndingMessage:
+    handler: handler.getEndingMessage
   getMovieDetails:
     handler: handler.getMovieDetails
-  getMoviesByActor:
-    handler: handler.getMoviesByActor
+  getTopRatedMovieList:
+    handler: handler.getTopRatedMovieList
+  getMovieByLanguage:
+    handler: handler.getMovieByLanguage
+  getMovieReviews:
+    handler: handler.getMovieReviews
+  getMovieByCertification:
+    handler: handler.getMovieByCertification
+    
+
+    
+    
