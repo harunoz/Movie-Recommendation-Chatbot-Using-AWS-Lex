@@ -1,5 +1,12 @@
 body {
   margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  overscroll-behavior: none;
+  //display: flex;
+  //flex-direction: auto;
 }
 
 /* Style the header */
@@ -10,14 +17,20 @@ body {
   background-position:center,center;
   background-size:auto,cover;
   padding: 150px;
+ // position: fixed;
+ overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   z-index: 1;
+  overscroll-behavior: none;
+  //display: flex;
+  //flex-direction: auto;
 }
 
 h1{
   text-align: center;
   color: maroon;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
   z-index: 1;
 }
 h2{
@@ -46,8 +59,7 @@ p{
 
 /* Style the chatbox */
 
-.chatbox{
-    
+.chatbox{  
   text-align: center;
   font-size:20px;
   font-family: "Lucida Console";
@@ -57,6 +69,10 @@ p{
   padding-right: 20%;
   top:20px;
   z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
 }
 
 

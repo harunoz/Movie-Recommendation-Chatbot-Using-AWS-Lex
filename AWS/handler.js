@@ -229,7 +229,7 @@ module.exports.getKidsMovies = async (event) => {
   const yearInput= event.currentIntent.slots["kids"];
   console.log(yearInput)
   const baseURL="https://api.themoviedb.org/3/";
-  const url = baseURL+"discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key="+apiKey ;
+  const url = baseURL+"discover/movie?certification_country=US&certification=G&sort_by=popularity.desc&api_key="+apiKey+"&include_adult" ;
   var movieName="";
   var flag=0;
   try {
@@ -241,8 +241,8 @@ module.exports.getKidsMovies = async (event) => {
     else {
     for (var i=0;i<5;i++){
       
-      var randomIndex=Math.floor((Math.random() * data.results.length) + 0);
-      var movieName= movieName+(i+1)+ " . "+ data.results[randomIndex].original_title + " ,  Release Date : "+data.results[i].release_date + " ; ";
+      //var randomIndex=Math.floor((Math.random() * data.results.length) + 0);
+      var movieName= movieName+(i+1)+ " . "+ data.results[i].original_title + " ,  Release Date : "+data.results[i].release_date + " ; ";
   
     }
   }
@@ -627,7 +627,7 @@ module.exports.getMovieByCertification = async (event) => {
 
     const response = await axios.get(url);
     const data=response.data;
-    answer = answer + "The following five movies are age appropriate and randomly chosen among the most popular movies: "; 
+   // answer = answer + "The following five movies are age appropriate and randomly chosen among the most popular movies: "; 
     const numbers = [ ...Array(data.results.length).keys() ].map(num => num + 1);
     numbers.sort(() => Math.random() - 0.5);
     var rndm = numbers.slice(0, 5);

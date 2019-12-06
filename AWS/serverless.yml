@@ -36,8 +36,8 @@ functions:
     handler: handler.getMovieByLanguage
   getMovieReviews:
     handler: handler.getMovieReviews
-  getMovieByCertification:
-    handler: handler.getMovieByCertification
+  #getMovieByCertification:
+    #handler: handler.getMovieByCertification
     
 
     
